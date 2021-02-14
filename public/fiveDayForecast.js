@@ -36,17 +36,17 @@ const weatherFiveDayForecast = async () => {
   const data = await responce.json();
   console.log(data);
 
-  dateOne.innerHTML = data.list[10].dt_txt.slice(0, -8);
-  dateTwo.innerHTML = data.list[18].dt_txt.slice(0, -8);
-  dateThree.innerHTML = data.list[25].dt_txt.slice(0, -8);
-  dateFour.innerHTML = data.list[34].dt_txt.slice(0, -8);
+  dateOne.innerHTML = data.list[5].dt_txt.slice(0, -8);
+  dateTwo.innerHTML = data.list[14].dt_txt.slice(0, -8);
+  dateThree.innerHTML = data.list[21].dt_txt.slice(0, -8);
+  dateFour.innerHTML = data.list[29].dt_txt.slice(0, -8);
   dateFive.innerHTML = data.list[39].dt_txt.slice(0, -8);
 
 
-  iconOne = data.list[10].weather[0].icon;
+  iconOne = data.list[5].weather[0].icon;
   forecastIconOne.innerHTML = `<img src="icons/${iconOne}.png">`;
 
-  iconTwo = data.list[18].weather[0].icon;
+  iconTwo = data.list[14].weather[0].icon;
   forecastIconTwo.innerHTML = `<img src="icons/${iconTwo}.png">`;
 
   iconThree = data.list[25].weather[0].icon;
@@ -59,22 +59,22 @@ const weatherFiveDayForecast = async () => {
   forecastIconFive.innerHTML = `<img src="icons/${iconFive}.png">`;
 
 
-  tempOne.innerHTML = data.list[10].main.temp.toFixed(0) + '&deg;';
-  tempTwo.innerHTML = data.list[18].main.temp.toFixed(0) + '&deg;';
-  tempThree.innerHTML = data.list[25].main.temp.toFixed(0) + '&deg;';
-  tempFour.innerHTML = data.list[34].main.temp.toFixed(0) + '&deg;';
+  tempOne.innerHTML = data.list[5].main.temp.toFixed(0) + '&deg;';
+  tempTwo.innerHTML = data.list[14].main.temp.toFixed(0) + '&deg;';
+  tempThree.innerHTML = data.list[21].main.temp.toFixed(0) + '&deg;';
+  tempFour.innerHTML = data.list[29].main.temp.toFixed(0) + '&deg;';
   tempFive.innerHTML = data.list[39].main.temp.toFixed(0) + '&deg;';
 
-  humidityOne.innerHTML = data.list[10].main.humidity + '%';
-  humidityTwo.innerHTML = data.list[18].main.humidity + '%';
-  humidityThree.innerHTML = data.list[25].main.humidity + '%';
-  humidityFour.innerHTML = data.list[28].main.humidity + '%';
+  humidityOne.innerHTML = data.list[5].main.humidity + '%';
+  humidityTwo.innerHTML = data.list[14].main.humidity + '%';
+  humidityThree.innerHTML = data.list[21].main.humidity + '%';
+  humidityFour.innerHTML = data.list[29].main.humidity + '%';
   humidityFive.innerHTML = data.list[39].main.humidity + '%';
 
-  windOne.innerHTML = data.list[10].wind.speed.toFixed(0) + 'м/с';
-  windTwo.innerHTML = data.list[18].wind.speed.toFixed(0) + 'м/с';
-  windThree.innerHTML = data.list[25].wind.speed.toFixed(0) + 'м/с';
-  windFour.innerHTML = data.list[34].wind.speed.toFixed(0) + 'м/с';
+  windOne.innerHTML = data.list[5].wind.speed.toFixed(0) + 'м/с';
+  windTwo.innerHTML = data.list[14].wind.speed.toFixed(0) + 'м/с';
+  windThree.innerHTML = data.list[21].wind.speed.toFixed(0) + 'м/с';
+  windFour.innerHTML = data.list[29].wind.speed.toFixed(0) + 'м/с';
   windFive.innerHTML = data.list[39].wind.speed.toFixed(0) + 'м/с';
 }
 
@@ -116,45 +116,45 @@ const weatherFiveDayForecastDefault = async () => {
   const data = await responce.json();
   console.log(data);
 
-  dateOne.innerHTML = data.list[10].dt_txt.slice(0, -8);
+  dateOne.innerHTML = data.list[5].dt_txt.slice(0, -8);
   dateTwo.innerHTML = data.list[14].dt_txt.slice(0, -8);
-  dateThree.innerHTML = data.list[25].dt_txt.slice(0, -8);
-  dateFour.innerHTML = data.list[34].dt_txt.slice(0, -8);
+  dateThree.innerHTML = data.list[21].dt_txt.slice(0, -8);
+  dateFour.innerHTML = data.list[29].dt_txt.slice(0, -8);
   dateFive.innerHTML = data.list[39].dt_txt.slice(0, -8);
 
 
-  iconOne = data.list[10].weather[0].icon;
+  iconOne = data.list[5].weather[0].icon;
   forecastIconOne.innerHTML = `<img src="icons/${iconOne}.png">`;
 
-  iconTwo = data.list[18].weather[0].icon;
+  iconTwo = data.list[14].weather[0].icon;
   forecastIconTwo.innerHTML = `<img src="icons/${iconTwo}.png">`;
 
-  iconThree = data.list[25].weather[0].icon;
+  iconThree = data.list[21].weather[0].icon;
   forecastIconThree.innerHTML = `<img src="icons/${iconThree}.png">`;
 
-  iconFour = data.list[34].weather[0].icon;
+  iconFour = data.list[29].weather[0].icon;
   forecastIconFour.innerHTML = `<img src="icons/${iconFour}.png">`;
 
   iconFive = data.list[39].weather[0].icon;
   forecastIconFive.innerHTML = `<img src="icons/${iconFive}.png">`;
 
 
-  tempOne.innerHTML = data.list[10].main.temp.toFixed(0) + '&deg;';
-  tempTwo.innerHTML = data.list[18].main.temp.toFixed(0) + '&deg;';
-  tempThree.innerHTML = data.list[25].main.temp.toFixed(0) + '&deg;';
-  tempFour.innerHTML = data.list[34].main.temp.toFixed(0) + '&deg;';
+  tempOne.innerHTML = data.list[5].main.temp.toFixed(0) + '&deg;';
+  tempTwo.innerHTML = data.list[14].main.temp.toFixed(0) + '&deg;';
+  tempThree.innerHTML = data.list[21].main.temp.toFixed(0) + '&deg;';
+  tempFour.innerHTML = data.list[29].main.temp.toFixed(0) + '&deg;';
   tempFive.innerHTML = data.list[39].main.temp.toFixed(0) + '&deg;';
 
-  humidityOne.innerHTML = data.list[10].main.humidity + '%';
-  humidityTwo.innerHTML = data.list[18].main.humidity + '%';
-  humidityThree.innerHTML = data.list[25].main.humidity + '%';
-  humidityFour.innerHTML = data.list[34].main.humidity + '%';
+  humidityOne.innerHTML = data.list[5].main.humidity + '%';
+  humidityTwo.innerHTML = data.list[14].main.humidity + '%';
+  humidityThree.innerHTML = data.list[21].main.humidity + '%';
+  humidityFour.innerHTML = data.list[29].main.humidity + '%';
   humidityFive.innerHTML = data.list[39].main.humidity + '%';
 
-  windOne.innerHTML = data.list[10].wind.speed.toFixed(0) + 'м/с';
-  windTwo.innerHTML = data.list[18].wind.speed.toFixed(0) + 'м/с';
-  windThree.innerHTML = data.list[25].wind.speed.toFixed(0) + 'м/с';
-  windFour.innerHTML = data.list[34].wind.speed.toFixed(0) + 'м/с';
+  windOne.innerHTML = data.list[5].wind.speed.toFixed(0) + 'м/с';
+  windTwo.innerHTML = data.list[14].wind.speed.toFixed(0) + 'м/с';
+  windThree.innerHTML = data.list[21].wind.speed.toFixed(0) + 'м/с';
+  windFour.innerHTML = data.list[29].wind.speed.toFixed(0) + 'м/с';
   windFive.innerHTML = data.list[39].wind.speed.toFixed(0) + 'м/с';
 }
 

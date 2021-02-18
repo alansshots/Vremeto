@@ -52,15 +52,15 @@ const weatherFiveDayForecast = async () => {
   iconThree = data.list[25].weather[0].icon;
   forecastIconThree.innerHTML = `<img src="icons/${iconThree}.png">`;
 
-  iconFour = data.list[33].weather[0].icon;
+  iconFour = data.list[29].weather[0].icon;
   forecastIconFour.innerHTML = `<img src="icons/${iconFour}.png">`;
 
   iconFive = data.list[39].weather[0].icon;
   forecastIconFive.innerHTML = `<img src="icons/${iconFive}.png">`;
 
 
-  tempOne.innerHTML = data.list[6].main.temp.toFixed(0) + '&deg;';
-  tempTwo.innerHTML = data.list[14].main.temp.toFixed(0) + '&deg;';
+  tempOne.innerHTML = data.list[6].main.temp_max.toFixed(0) + '&deg;';
+  tempTwo.innerHTML = data.list[14].main.temp_max.toFixed(0) + '&deg;';
   tempThree.innerHTML = data.list[21].main.temp.toFixed(0) + '&deg;';
   tempFour.innerHTML = data.list[29].main.temp.toFixed(0) + '&deg;';
   tempFive.innerHTML = data.list[39].main.temp.toFixed(0) + '&deg;';
@@ -139,7 +139,7 @@ const weatherFiveDayForecastDefault = async () => {
   forecastIconFive.innerHTML = `<img src="icons/${iconFive}.png">`;
 
 
-  tempOne.innerHTML = data.list[6].main.temp.toFixed(0) + '&deg;';
+  tempOne.innerHTML = data.list[6].main.temp_max.toFixed(0) + '&deg;';
   tempTwo.innerHTML = data.list[14].main.temp.toFixed(0) + '&deg;';
   tempThree.innerHTML = data.list[21].main.temp.toFixed(0) + '&deg;';
   tempFour.innerHTML = data.list[29].main.temp.toFixed(0) + '&deg;';
